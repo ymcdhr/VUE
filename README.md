@@ -25,7 +25,7 @@ npm run build --report
 ```
 
 
-### 还需要安装以下插件：
+### 如果报错，还需要安装以下插件：
 ```bash
 # swipe组件需要
 npm install wind-dom
