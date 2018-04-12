@@ -1,4 +1,4 @@
-# wenzhou
+# Vue组件示例，PC端
 
 > A Vue.js project
 
