@@ -1,6 +1,6 @@
 # Vue组件示例
 
-默认为PC端，移动端请切换分支<br/>
+默认为PC端，移动端请切换到分支mobile<br/>
 
 PC端示例页面：[https://s3-ap-southeast-1.amazonaws.com/vue201804121500/vue/pc/index.html#/components](https://s3-ap-southeast-1.amazonaws.com/vue201804121500/vue/pc/index.html#/components)<br/>
 
