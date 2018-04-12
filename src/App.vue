@@ -1,40 +1,25 @@
 <style>
   /* 引入外部css的方法 */
   /* @import "//res.suning.cn/public/v5/common/2.0.0/m-common.css"; */
-
-  /* reset样式 */
-  @import "./style/reset.css";
-  @import "./style/iconfont/iconfont.css";
-
-
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-align: center;
     color: #2c3e50;
   }
   .router{
-    /* width: 150px; */
-    /* position: fixed;
-    top: 100px;
-    left: 50px; */
     overflow: hidden;
-    border: 1px dashed #409eff;
   }
   .router li{
     float: left;
     width: 100%;
     padding: .4rem;
-    color: #ffffff;
-    background-color: #409eff;
-    border-bottom: 1px dashed #409eff;
-    text-align: center;
-  }
-  .router li:last-child{
-    border-bottom: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2f2ff;
   }
   .router li a{
-      color: #ffffff;
+      color: #333333;
   }
 </style>
 
@@ -43,35 +28,30 @@
   <div id="app">
    <!--<img src="./assets/logo.png">-->
 
-	<nav-top></nav-top>
+	
 	
 	<!--路由示例-->
     <ul class="router">
-        <li><router-link to="/components">跳转到组件示例</router-link></li>
+        <li><router-link to="/mods">跳转到基础组件示例</router-link></li>
+        <li><router-link to="/base">跳转到基础功能示例</router-link></li>
+        <li><router-link to="/swipe">跳转到联版/滑动广告</router-link></li> 
+        <li><router-link to="/tab">跳转到tab组件示例（点击切换）</router-link></li> 
+        <li><router-link to="/scroll">跳转到scroll-tab示例（滑动切换）</router-link></li> 
     </ul>   
+
+    <p style="margin:0 auto;margin:.4rem">----------------这里是分割线，下面是路由视图----------------</p>
     
     <!-- 供路由使用的视图 -->
     <router-view></router-view>
    
-   <nav-bot></nav-bot>
   </div>
 </template>
 
 
 
 <script>
-
-import navTop from './components/navTop.vue';
-import navBot from './components/navBot.vue';
-
 export default {
-    name: 'app',
-  	components: {
-    'nav-top': navTop,
-    'nav-bot': navBot
-		// 'nav-top': require('./components/navTop.vue')
-		
-	}
+  name: 'app'
 }
 </script>
 

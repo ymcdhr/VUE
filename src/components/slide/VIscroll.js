@@ -5,8 +5,7 @@
  */
 
 //var IScroll =  require('http://res.suning.cn/public/v5/mod/iscroll-lite/5.1.3/iscroll-lite.js');
-// import IScroll from '../../script/lib/iscroll-lite.5.1.3.js';
-const IScroll = require('../../script/lib/iscroll-lite.5.1.3.js');
+import IScroll from '../../../module/iscroll-lite.5.1.3.js';
 
 const VIScroll = {
     install(Vue, options) {
@@ -58,6 +57,4 @@ const VIScroll = {
         })
     }
 }
-// export default VIScroll;
-
-exports.VIScroll = VIScroll;
+export default VIScroll;
