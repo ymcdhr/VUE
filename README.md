@@ -24,4 +24,12 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+### 还需要安装以下插件：
+```bash
+# swipe组件需要
+npm install wind-dom
+
+# scroll等组件需要
+npm install viscroll
+```
