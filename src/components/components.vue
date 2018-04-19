@@ -6,6 +6,23 @@
 		max-width: 1200px;
 		margin: 0 auto;
 	}
+	.vuex-btn{
+		width: 100px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		border: 1px solid cornflowerblue;
+		cursor: pointer;
+	}
+	.vuex{
+		width: 400px;
+		height: 100px;
+		border: 2px solid red;
+		margin: 20px 0;
+	}
+	.blue{
+		border-color: blue;
+	}
 </style>
 
 <template>
@@ -13,6 +30,18 @@
 
 	<div class="components">
 		<br/>
+		<!-- vuex示例代码 -->
+		<div class="vuex-btn" @click="$store.dispatch('toggleAction')">
+			切换vuex状态
+		</div>
+
+		<div class="vuex" v-show="$store.state.show">
+			vuex示例代码:store.state.show
+		</div>
+
+		<div class="vuex blue" v-show="$store.getters.notShow">
+			vuex示例代码:$store.getters.notShow
+		</div>
 
 		<!-- 栅格系统示例 -->
 		栅格系统：
