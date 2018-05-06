@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import vuex from 'vuex'
 import api from "../api/shop.js";
+import service from "../service/service.js";
 
 Vue.use(vuex);
 
@@ -30,7 +31,10 @@ export default new vuex.Store({
         },
 
         addProduct(state,product){
-            state.addedList.push(product);
+            // 查找product，去重
+            if(!state.addedList.find((value)=>(value.id===product.id))){
+                state.addedList.push(product);
+            }
         },
         deleteProduct(state,product){
             state.addedList = state.addedList.filter((item)=>{
