@@ -4,7 +4,7 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import "./script/ieSupport.js";
-import store from "./vuex";
+import store from "./store/vuex";
 
 Vue.config.productionTip = false
 

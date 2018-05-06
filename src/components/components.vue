@@ -43,6 +43,12 @@
 			vuex示例代码:$store.getters.notShow
 		</div>
 
+		<!-- vuex示例代码：购物车 -->
+		<shopping-cart></shopping-cart>
+	
+
+
+
 		<!-- 栅格系统示例 -->
 		栅格系统：
 		<br/>
@@ -131,6 +137,7 @@ import swiper from './swiper.vue';
 import imgPre from './imgPre.vue';
 import slide from './slide.vue';
 import vueFluid from './vueFluid.vue';
+import shoppingCart from './shoppingCart.vue';
 
 export default {
 	data() {
@@ -223,8 +230,8 @@ export default {
 		'img-pre': imgPre,
 		'slide': slide,
 		'vue-top': vueTop,
-		'vue-fluid': vueFluid
-
+		'vue-fluid': vueFluid,
+		"shopping-cart": shoppingCart
 	},
 
 	methods: {
